@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: default
 menu: news
 title: 新闻
 permalink: /news/
@@ -11,11 +11,18 @@ public: true
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
 <!--<h2 id="{{ word }}">{{ word | upcase }}</h2>-->
-<ul>
-{% for post in site.categories[word] %}{% if post.title != null %}
-<li><!--<span>{{ post.date | date: "%Y-%m-%d" }}</span> : --><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-{% endif %}{% endfor %}
-</ul>
-{% endunless %}{% endfor %}
 
-<a href="{{ site.baseurl }}/rss.xml" class="btn btn-primary" target="_blank" title="RSS">RSS</a>
+<div class="list-group">
+    {% for post in site.categories[word] %}{% if post.title != null %}
+        <a href="{{ site.baseurl}}{{ post.url }}" class="list-group-item list-group-item-action" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+    {% endif %}{% endfor %}
+    <a href="{{ site.baseurl }}/rss.xml" class="list-group-item list-group-item-action list-group-item-warning" target="_blank" title="RSS">RSS</a>
+</div>
+
+
+<!--<ul>-->
+<!--{% for post in site.categories[word] %}{% if post.title != null %}-->
+<!--<li>&lt;!&ndash;<span>{{ post.date | date: "%Y-%m-%d" }}</span> : &ndash;&gt;<a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>-->
+<!--{% endif %}{% endfor %}-->
+<!--</ul>-->
+{% endunless %}{% endfor %}
