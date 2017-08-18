@@ -62,9 +62,9 @@ exclude:
 
 ##################################################
 # Mine
-cdn: "//cache.shareany.com/?v=1&f=http://www.ranking.org.cn"
+cdn: "//cache.shareany.com/?v=2&f=http://www.ranking.org.cn"
 
 ##################################################
 # Test
 #url: "http://localhost:4000"
-cdn: ""
+#cdn: ""
