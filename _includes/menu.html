@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link menu_home" href="{{ site.baseurl }}/">首页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu_news" href="{{ site.baseurl }}/news/">新闻</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu_about" href="{{ site.baseurl }}/about/">关于</a>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <div class="input-group">
+                <!--<span class="input-group-addon" id="basic-addon1">@</span>-->
+                <input type="search" class="form-control" placeholder="搜索" aria-label="搜索" aria-describedby="basic-addon1">
+            </div>
+        </form>
+    </div>
+</nav>

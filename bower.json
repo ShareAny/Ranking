@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "name": "Ranking",
+    "description": "",
+    "license": "",
+    "homepage": "",
+    "authors": [],
+    "keywords": [],
+    "main": [],
+    "ignore": [],
+    "moduleType": [],
+    "devDependencies": {},
+    "dependencies": {
+        "bootstrap": "4.*"
+    }
+}
